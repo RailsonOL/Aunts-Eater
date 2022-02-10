@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D116909A-C20D-4D09-DD4A-AC97CF508777}</ProjectGuid>
+    <ProjectGuid>{58FBBA01-FB7A-C719-A50C-42D8F19A8E21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Random Generators\TerrainGenerator.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\Save.cs" />
     <Compile Include="Assets\Scripts\Caracters\Donkey.cs" />
     <Compile Include="Assets\Scripts\SexyAppeal.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueController.cs" />
@@ -71,13 +72,12 @@
     <Compile Include="Assets\Scripts\Random Generators\SARandomSpawner.cs" />
     <Compile Include="Assets\Scripts\Caracters\BossAunts\Word1\BossProjectile.cs" />
     <Compile Include="Assets\Scripts\Traps\MagicTrap.cs" />
+    <Compile Include="Assets\Scripts\SaveSystem\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Menu\Pause\PauseMenuController.cs" />
     <Compile Include="Assets\Scripts\Menu\Main\SelectablePlayer.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Caracters\BossAunts\Word1\BossAttack.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\Save.cs" />
-    <Compile Include="Assets\Scripts\SaveSystem\SaveLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\Itens Icons\Shikashi&apos;s Fantasy Icons Pack\Shikashi&apos;s Fantasy Icons Pack.txt" />
