@@ -1,6 +1,6 @@
-##/Library/ArtifactDB
-##/Library/ArtifactDB-lock
-##/Library/PackageCache
-##/Library/PlayerDataCache
+/Library/ArtifactDB
+/Library/ArtifactDB-lock
+/Library/PackageCache
+/Library/PlayerDataCache
 /Library/Artifacts
 Assets.7z
