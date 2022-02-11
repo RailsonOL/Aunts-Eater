@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D116909A-C20D-4D09-DD4A-AC97CF508777}</ProjectGuid>
+    <ProjectGuid>{58FBBA01-FB7A-C719-A50C-42D8F19A8E21}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -82,6 +82,8 @@
   <ItemGroup>
     <None Include="Assets\Assets\Itens Icons\Shikashi&apos;s Fantasy Icons Pack\Shikashi&apos;s Fantasy Icons Pack.txt" />
     <None Include="Assets\Assets\Itens Icons\Shikashi&apos;s Fantasy Icons Pack v2\Shikashi&apos;s Fantasy Icons Pack.txt" />
+    <None Include="Assets\Worlds\Park\Font.txt" />
+    <None Include="Assets\Worlds\Park\license.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
