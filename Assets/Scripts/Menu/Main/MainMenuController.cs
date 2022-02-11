@@ -1,21 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
     public GameObject MainMenu;
     public GameObject OptionsMenu;
     public GameObject SelectPlayer;
+
+    public Text newOrContinueText;
     void Start()
     {
-        
+        if (SaveLoad.CheckSaveExists())
+        {
+            newOrContinueText.text = "CONTINUE";
+        }
     }
 
-    void Update()
-    {
-        
-    }
     public void PlayGame()
     {
         MainMenu.SetActive(false);

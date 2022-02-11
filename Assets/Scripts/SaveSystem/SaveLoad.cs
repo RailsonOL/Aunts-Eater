@@ -8,19 +8,23 @@ public class SaveLoad : MonoBehaviour
 {
     void Start()
     {
-        Save s = new Save();
+        //Save s = new Save();
 
-        s.score = 25;
-        s.inventory = new List<string>();
+        //s.playerSelected = "P1";
+        //s.powerups = new List<string>();
 
-        s.inventory.Add("TESTANDO");
+        //s.powerups.Add("TESTANDO");
 
-        Save load = LoadGame();
+        //DeleteSave();
 
-        print(load.inventory[0]);
+        //SaveGame(s);
+
+        //Save load = LoadGame();
+
+        //print(load.inventory[0]);
     }
 
-    public void SaveGame(Save s)
+    public static void SaveGame(Save s)
     {
         BinaryFormatter bf = new BinaryFormatter();
 
@@ -34,7 +38,7 @@ public class SaveLoad : MonoBehaviour
         print("Jogo Salvo");
     }
 
-    public Save LoadGame()
+    public static Save LoadGame()
     {
         BinaryFormatter bf = new BinaryFormatter();
 
@@ -45,14 +49,36 @@ public class SaveLoad : MonoBehaviour
         if(File.Exists(path + "/savegame.save"))
         {
             file = File.Open(path + "/savegame.save", FileMode.Open);
-            Save loaded = (Save)bf.Deserialize(file);
+            Save loadedData = (Save)bf.Deserialize(file);
             file.Close();
 
             print("Jogo Carregado");
 
-            return loaded;
+            return loadedData;
         }
 
         return null;
+    }
+
+    public static bool CheckSaveExists()
+    {
+        string path = Application.persistentDataPath;
+
+        if (File.Exists(path + "/savegame.save")) return true;
+
+        return false;
+    }
+
+    public static bool DeleteSave()
+    {
+        string path = Application.persistentDataPath;
+
+        if (File.Exists(path + "/savegame.save"))
+        {
+            File.Delete(path + "/savegame.save");
+            return true;
+        }
+
+        return false;
     }
 }

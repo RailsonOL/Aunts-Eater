@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Save
 {
-    public int score;
-    public List<string> inventory;
+    public string playerSelected;
+    public int sexyAppelPoints;
+    public List<string> powerups;
 }
